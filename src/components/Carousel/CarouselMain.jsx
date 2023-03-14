@@ -23,7 +23,7 @@ const CarouselMain = () => {
     {
       id: 1,
       texta: "First featurette heading.",
-      textb: "It’ll blow your mind.",
+      textb: " It’ll blow your mind.",
       textc:
         "Some great placeholder content for the first featurette here. Imagine some exciting prose here.",
       reverse: false,
@@ -31,7 +31,7 @@ const CarouselMain = () => {
     {
       id: 2,
       texta: "Oh yeah, it’s that good.",
-      textb: "See for yourself.",
+      textb: " See for yourself.",
       textc:
         "Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.",
       reverse: true,
@@ -39,7 +39,7 @@ const CarouselMain = () => {
     {
       id: 3,
       texta: "And lastly, this one.",
-      textb: "Checkmate.",
+      textb: " Checkmate.",
       textc:
         "And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.",
       reverse: false,

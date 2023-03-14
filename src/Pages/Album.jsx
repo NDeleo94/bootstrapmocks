@@ -1,7 +1,7 @@
 import React from "react";
-import AlbumFooter from "../components/AlbumFooter";
-import AlbumHeader from "../components/AlbumHeader";
-import AlbumMain from "../components/AlbumMain";
+import AlbumFooter from "../components/Album/AlbumFooter";
+import AlbumHeader from "../components/Album/AlbumHeader";
+import AlbumMain from "../components/Album/AlbumMain";
 
 const Album = () => {
   return (

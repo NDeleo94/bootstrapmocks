@@ -1,11 +1,11 @@
 import React from "react";
 import Album from "./Pages/Album";
-import Carousel from "./Pages/Carousel";
+//import Carousel from "./Pages/Carousel";
 
 const Main = () => {
   return (
     <div>
-      <Carousel />
+      <Album />
     </div>
   );
 };
