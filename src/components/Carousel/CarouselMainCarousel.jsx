@@ -22,7 +22,7 @@ const CarouselMainCarousel = () => {
           position={0}
         />
         <CarouselMainCarouselItem
-          active={true}
+          active={false}
           text1={"Another example headline."}
           text2={
             "Some representative placeholder content for the second slide of the carousel."
@@ -31,7 +31,7 @@ const CarouselMainCarousel = () => {
           position={1}
         />
         <CarouselMainCarouselItem
-          active={true}
+          active={false}
           text1={"One more for good measure."}
           text2={
             "Some representative placeholder content for the third slide of this carousel."
