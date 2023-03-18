@@ -1,11 +1,12 @@
 import React from "react";
 // import Album from "./Pages/Album";
-import Carousel from "./Pages/Carousel";
+// import Carousel from "./Pages/Carousel";
+import Dashboard from "./Pages/Dashboard";
 
 const Main = () => {
   return (
     <div>
-      <Carousel />
+      <Dashboard />
     </div>
   );
 };
