@@ -42,8 +42,10 @@ const DashboardMainCanvas = () => {
             },
           },
         },
-        legend: {
-          display: false,
+        plugins: {
+          legend: {
+            display: false,
+          },
         },
         onClick: (e) => {
           const canvasPosition = getRelativePosition(e, chart);
@@ -59,7 +61,11 @@ const DashboardMainCanvas = () => {
     return () => chart.destroy(); // Clean up the chart on unmounting
   }, []);
 
-  return <canvas ref={chartRef} id="myChart" width="400" height="400"></canvas>;
+  return (
+    <div style={{ width: "400", height: "400" }}>
+      <canvas ref={chartRef} id="myChart" width="800" height="400"></canvas>
+    </div>
+  );
 };
 
 export default DashboardMainCanvas;
