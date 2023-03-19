@@ -1,4 +1,5 @@
 import React from "react";
+import DashboardMainCanvas from "./DashboardMainCanvas";
 import DashboardMainTable from "./DashboardMainTable";
 
 const DashboardMain = () => {
@@ -24,13 +25,13 @@ const DashboardMain = () => {
           </button>
         </div>
       </div>
-
-      <canvas
+      <DashboardMainCanvas />
+      {/* <canvas
         className="my-4 w-100"
         id="myChart"
         width="900"
         height="380"
-      ></canvas>
+      ></canvas> */}
       <DashboardMainTable title={"Section title"} />
     </main>
   );
