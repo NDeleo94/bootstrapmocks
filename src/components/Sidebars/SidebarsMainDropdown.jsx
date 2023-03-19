@@ -1,12 +1,14 @@
 import React from "react";
-import SidebarsMainADropdownItem from "./SidebarsMainADropdownItem";
+import SidebarsMainDropdownItem from "./SidebarsMainDropdownItem";
 
-const SidebarsMainADropdown = ({ links, image, text }) => {
+const SidebarsMainDropdown = ({ dark, links, image, text }) => {
   return (
     <div className="dropdown">
       <a
         href="/"
-        className="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+        className={`d-flex align-items-center ${
+          dark ? "text-white" : "link-dark"
+        } text-decoration-none dropdown-toggle`}
         data-bs-toggle="dropdown"
         aria-expanded="false"
       >
@@ -19,9 +21,13 @@ const SidebarsMainADropdown = ({ links, image, text }) => {
         />
         <strong>{text}</strong>
       </a>
-      <ul className="dropdown-menu dropdown-menu-dark text-small shadow">
+      <ul
+        className={`dropdown-menu ${
+          dark ? "dropdown-menu-dark" : ""
+        } text-small shadow`}
+      >
         {links.map((link) => (
-          <SidebarsMainADropdownItem
+          <SidebarsMainDropdownItem
             key={link.id}
             divider={link.divider}
             link={link.link}
@@ -33,4 +39,4 @@ const SidebarsMainADropdown = ({ links, image, text }) => {
   );
 };
 
-export default SidebarsMainADropdown;
+export default SidebarsMainDropdown;

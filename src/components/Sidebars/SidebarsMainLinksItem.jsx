@@ -1,8 +1,9 @@
 import React from "react";
 
-const SidebarsMainALinksItem = ({
+const SidebarsMainLinksItem = ({
   active,
   textWhite,
+  dark,
   ariaCurrent,
   useSVG,
   label,
@@ -13,7 +14,7 @@ const SidebarsMainALinksItem = ({
       <a
         href={link}
         className={`nav-link ${
-          active ? "active" : textWhite ? "text-white" : ""
+          active ? "active" : textWhite ? "text-white" : dark ? "link-dark" : ""
         }`}
         aria-current={ariaCurrent}
       >
@@ -26,4 +27,4 @@ const SidebarsMainALinksItem = ({
   );
 };
 
-export default SidebarsMainALinksItem;
+export default SidebarsMainLinksItem;

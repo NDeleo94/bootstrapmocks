@@ -1,14 +1,15 @@
 import React from "react";
-import SidebarsMainALinksItem from "./SidebarsMainALinksItem";
+import SidebarsMainLinksItem from "./SidebarsMainLinksItem";
 
-const SidebarsMainALinks = ({ links }) => {
+const SidebarsMainLinks = ({ links }) => {
   return (
     <ul className="nav nav-pills flex-column mb-auto">
       {links.map((link) => (
-        <SidebarsMainALinksItem
+        <SidebarsMainLinksItem
           key={link.id}
           active={link.active}
           textWhite={link.textWhite}
+          dark={link.dark}
           ariaCurrent={link.ariaCurrent}
           useSVG={link.useSVG}
           label={link.label}
@@ -19,4 +20,4 @@ const SidebarsMainALinks = ({ links }) => {
   );
 };
 
-export default SidebarsMainALinks;
+export default SidebarsMainLinks;

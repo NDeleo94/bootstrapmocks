@@ -1,6 +1,6 @@
 import React from "react";
 
-const SidebarsMainADropdownItem = ({ divider, link, label }) => {
+const SidebarsMainDropdownItem = ({ divider, link, label }) => {
   return divider ? (
     <hr className="dropdown-divider" />
   ) : (
@@ -12,4 +12,4 @@ const SidebarsMainADropdownItem = ({ divider, link, label }) => {
   );
 };
 
-export default SidebarsMainADropdownItem;
+export default SidebarsMainDropdownItem;

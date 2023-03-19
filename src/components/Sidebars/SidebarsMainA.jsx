@@ -1,6 +1,6 @@
 import React from "react";
-import SidebarsMainADropdown from "./SidebarsMainADropdown";
-import SidebarsMainALinks from "./SidebarsMainALinks";
+import SidebarsMainDropdown from "./SidebarsMainDropdown";
+import SidebarsMainLinks from "./SidebarsMainLinks";
 
 const SidebarsMainA = () => {
   const linksA = [
@@ -8,6 +8,7 @@ const SidebarsMainA = () => {
       id: 1,
       active: true,
       textWhite: false,
+      dark: false,
       ariaCurrent: "page",
       useSVG: "#home",
       label: "Home",
@@ -17,6 +18,7 @@ const SidebarsMainA = () => {
       id: 2,
       active: false,
       textWhite: true,
+      dark: false,
       ariaCurrent: "",
       useSVG: "#speedometer2",
       label: "Dashboard",
@@ -26,6 +28,7 @@ const SidebarsMainA = () => {
       id: 3,
       active: false,
       textWhite: true,
+      dark: false,
       ariaCurrent: "",
       useSVG: "#table",
       label: "Orders",
@@ -35,6 +38,7 @@ const SidebarsMainA = () => {
       id: 4,
       active: false,
       textWhite: true,
+      dark: false,
       ariaCurrent: "",
       useSVG: "#grid",
       label: "Products",
@@ -44,6 +48,7 @@ const SidebarsMainA = () => {
       id: 5,
       active: false,
       textWhite: true,
+      dark: false,
       ariaCurrent: "",
       useSVG: "#people-circle",
       label: "Customers",
@@ -74,9 +79,10 @@ const SidebarsMainA = () => {
         <span className="fs-4">Sidebar</span>
       </a>
       <hr />
-      <SidebarsMainALinks links={linksA} />
+      <SidebarsMainLinks links={linksA} />
       <hr />
-      <SidebarsMainADropdown
+      <SidebarsMainDropdown
+        dark={true}
         links={linksB}
         image={"https://github.com/mdo.png"}
         text={"mdo"}

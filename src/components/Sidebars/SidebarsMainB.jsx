@@ -1,6 +1,69 @@
 import React from "react";
+import SidebarsMainDropdown from "./SidebarsMainDropdown";
+import SidebarsMainLinks from "./SidebarsMainLinks";
 
 const SidebarsMainB = () => {
+  const linksA = [
+    {
+      id: 1,
+      active: true,
+      textWhite: false,
+      dark: true,
+      ariaCurrent: "page",
+      useSVG: "#home",
+      label: "Home",
+      link: "/",
+    },
+    {
+      id: 2,
+      active: false,
+      textWhite: false,
+      dark: true,
+      ariaCurrent: "",
+      useSVG: "#speedometer2",
+      label: "Dashboard",
+      link: "/",
+    },
+    {
+      id: 3,
+      active: false,
+      textWhite: false,
+      dark: true,
+      ariaCurrent: "",
+      useSVG: "#table",
+      label: "Orders",
+      link: "/",
+    },
+    {
+      id: 4,
+      active: false,
+      textWhite: false,
+      dark: true,
+      ariaCurrent: "",
+      useSVG: "#grid",
+      label: "Products",
+      link: "/",
+    },
+    {
+      id: 5,
+      active: false,
+      textWhite: false,
+      dark: true,
+      ariaCurrent: "",
+      useSVG: "#people-circle",
+      label: "Customers",
+      link: "/",
+    },
+  ];
+
+  const linksB = [
+    { id: 1, divider: false, label: "New project...", link: "/" },
+    { id: 2, divider: false, label: "Settings", link: "/" },
+    { id: 3, divider: false, label: "Profile", link: "/" },
+    { id: 4, divider: true, label: "", link: "" },
+    { id: 5, divider: false, label: "Sign out", link: "/" },
+  ];
+
   return (
     <div
       className="d-flex flex-column flex-shrink-0 p-3 bg-light"
@@ -16,91 +79,14 @@ const SidebarsMainB = () => {
         <span className="fs-4">Sidebar</span>
       </a>
       <hr />
-      <ul className="nav nav-pills flex-column mb-auto">
-        <li className="nav-item">
-          <a href="#" className="nav-link active" aria-current="page">
-            <svg className="bi pe-none me-2" width="16" height="16">
-              <use href="#home" />
-            </svg>
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="#" className="nav-link link-dark">
-            <svg className="bi pe-none me-2" width="16" height="16">
-              <use href="#speedometer2" />
-            </svg>
-            Dashboard
-          </a>
-        </li>
-        <li>
-          <a href="#" className="nav-link link-dark">
-            <svg className="bi pe-none me-2" width="16" height="16">
-              <use href="#table" />
-            </svg>
-            Orders
-          </a>
-        </li>
-        <li>
-          <a href="#" className="nav-link link-dark">
-            <svg className="bi pe-none me-2" width="16" height="16">
-              <use href="#grid" />
-            </svg>
-            Products
-          </a>
-        </li>
-        <li>
-          <a href="#" className="nav-link link-dark">
-            <svg className="bi pe-none me-2" width="16" height="16">
-              <use href="#people-circle" />
-            </svg>
-            Customers
-          </a>
-        </li>
-      </ul>
+      <SidebarsMainLinks links={linksA} />
       <hr />
-      <div className="dropdown">
-        <a
-          href="#"
-          className="d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          <img
-            src="https://github.com/mdo.png"
-            alt=""
-            width="32"
-            height="32"
-            className="rounded-circle me-2"
-          />
-          <strong>mdo</strong>
-        </a>
-        <ul className="dropdown-menu text-small shadow">
-          <li>
-            <a className="dropdown-item" href="/">
-              New project...
-            </a>
-          </li>
-          <li>
-            <a className="dropdown-item" href="/">
-              Settings
-            </a>
-          </li>
-          <li>
-            <a className="dropdown-item" href="/">
-              Profile
-            </a>
-          </li>
-          <li>
-            <hr className="dropdown-divider" />
-          </li>
-          <li>
-            <a className="dropdown-item" href="/">
-              Sign out
-            </a>
-          </li>
-        </ul>
-      </div>
+      <SidebarsMainDropdown
+        dark={false}
+        links={linksB}
+        image={"https://github.com/mdo.png"}
+        text={"mdo"}
+      />
     </div>
   );
 };
