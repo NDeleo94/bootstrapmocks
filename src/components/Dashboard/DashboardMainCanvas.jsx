@@ -1,12 +1,13 @@
 import React, { useEffect, useRef } from "react";
 import Chart from "chart.js/auto";
 import { getRelativePosition } from "chart.js/helpers";
+import feather from "feather-icons";
 
 const DashboardMainCanvas = () => {
   const chartRef = useRef(null);
 
   useEffect(() => {
-    // feather.replace({ "aria-hidden": "true" });
+    feather.replace({ "aria-hidden": "true" });
 
     const ctx = chartRef.current.getContext("2d");
     const chart = new Chart(ctx, {
@@ -35,13 +36,11 @@ const DashboardMainCanvas = () => {
       },
       options: {
         scales: {
-          yAxes: [
-            {
-              ticks: {
-                beginAtZero: false,
-              },
+          y: {
+            ticks: {
+              beginAtZero: true,
             },
-          ],
+          },
         },
         legend: {
           display: false,

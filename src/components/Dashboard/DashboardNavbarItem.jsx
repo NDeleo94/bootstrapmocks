@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
+import feather from "feather-icons";
 
 const DashboardNavbarItem = ({ active, ariaCurrent, link, icon, label }) => {
+  useEffect(() => {
+    feather.replace();
+  }, []);
+
   return (
     <li className="nav-item">
       <a
@@ -8,7 +13,7 @@ const DashboardNavbarItem = ({ active, ariaCurrent, link, icon, label }) => {
         aria-current={ariaCurrent}
         href={link}
       >
-        <span data-feather={icon} className="align-text-bottom"></span>
+        <i data-feather={icon} className="align-text-bottom"></i>
         {label}
       </a>
     </li>

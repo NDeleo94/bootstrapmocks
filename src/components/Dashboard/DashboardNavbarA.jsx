@@ -11,7 +11,7 @@ const DashboardNavbarA = ({ links }) => {
           ariaCurrent={link.ariaCurrent}
           link={link.link}
           label={link.label}
-          icon={link.label}
+          icon={link.icon}
         />
       ))}
     </ul>
