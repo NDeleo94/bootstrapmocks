@@ -31,7 +31,7 @@ const DashboardMain = () => {
         width="900"
         height="380"
       ></canvas>
-      <DashboardMainTable />
+      <DashboardMainTable title={"Section title"} />
     </main>
   );
 };
