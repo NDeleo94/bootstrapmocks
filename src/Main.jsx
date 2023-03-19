@@ -1,7 +1,7 @@
 import React from "react";
-// import Album from "./Pages/Album";
-// import Carousel from "./Pages/Carousel";
-import Dashboard from "./Pages/Dashboard";
+// import Album from "./Pages/Album/Album";
+// import Carousel from "./Pages/Carousel/Carousel";
+import Dashboard from "./Pages/Dashboard/Dashboard";
 
 const Main = () => {
   return (

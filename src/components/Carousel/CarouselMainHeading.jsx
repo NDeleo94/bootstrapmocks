@@ -22,7 +22,7 @@ const CarouselMainHeading = ({ text }) => {
       <h2 className="fw-normal">Heading</h2>
       <p>{text}</p>
       <p>
-        <a className="btn btn-secondary" href="#">
+        <a className="btn btn-secondary" href="/">
           View details &raquo;
         </a>
       </p>

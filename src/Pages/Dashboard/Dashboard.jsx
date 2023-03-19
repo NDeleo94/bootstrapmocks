@@ -1,9 +1,9 @@
 import React from "react";
-import DashboardHeader from "../components/Dashboard/DashboardHeader";
-import DashboardMain from "../components/Dashboard/DashboardMain";
-import DashboardNavbar from "../components/Dashboard/DashboardNavbar";
+import DashboardHeader from "../../components/Dashboard/DashboardHeader";
+import DashboardMain from "../../components/Dashboard/DashboardMain";
+import DashboardNavbar from "../../components/Dashboard/DashboardNavbar";
+
 import "./dashboard.css";
-// import "./dashboardData.js";
 
 const Dashboard = () => {
   return (
